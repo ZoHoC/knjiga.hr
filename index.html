@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knjiga.hr</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo"> čitaj! </a>
+        <svg
+          class="header__hamburger"
+          width="448"
+          height="392"
+          viewBox="0 0 448 392"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 72H432C440.837 72 448 64.837 448 56V16C448 7.163 440.837 0 432 0H16C7.163 0 0 7.163 0 16V56C0 64.837 7.163 72 16 72ZM16 232H432C440.837 232 448 224.837 448 216V176C448 167.163 440.837 160 432 160H16C7.163 160 0 167.163 0 176V216C0 224.837 7.163 232 16 232ZM16 392H432C440.837 392 448 384.837 448 376V336C448 327.163 440.837 320 432 320H16C7.163 320 0 327.163 0 336V376C0 384.837 7.163 392 16 392Z"
+            fill="black"
+          />
+        </svg>
+        <div class="header__container">
+          <div class="header__accessibility">
+            <p class="header__text">Prilagodba pristupačnosti</p>
+            <div class="header__options">
+              <a href="#" class="header__option header__option_lowercase">a</a>
+              <a href="#" class="header__option header__option_uppercase">a</a>
+            </div>
+          </div>
+          <nav class="header__nav">
+            <a href="#" class="header__link">aktivnosti</a>
+            <a href="#" class="header__link">o programu</a>
+            <a href="#" class="header__link">vijesti</a>
+            <a href="#" class="header__link">press</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__container">
+            <p class="hero__tagline">želiš znati? želiš osjećati?</p>
+            <h1 class="hero__title">Čitaj!</h1>
+            <p class="hero__description">
+              Čitanje je
+              <span class="hero__description_accent">put do znanja</span> i
+              novih spoznaja, a
+              <span class="hero__description_accent"
+                >događaji i aktivnosti</span
+              >
+              koji nas očekuju tijekom ove godine doprinijet će razvoju kulture
+              čitanja i omogućiti što većem dijelu društva čitanje sa
+              <span class="hero__description_accent"
+                >zadovoljstvom i razumijevanjem</span
+              >.
+            </p>
+            <button class="button">Saznaj više</button>
+          </div>
+          <div class="hero__image">
+            <img src="./images/hero-book.png" alt="Knjiga" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="about">
+          <div class="about__container">
+            <h2 class="about__title">
+              Želiš znati? Želiš osjećati?
+              <span class="about__title_accent">Knjiga!</span>
+            </h2>
+            <p class="about__text">
+              If you are going to use a passage of Lorem Ipsum, you need to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text. All the Lorem Ipsum generators on the Internet tend to
+              repeat predefined chunks as necessary
+            </p>
+            <button class="button">Saznaj više</button>
+          </div>
+          <div class="about__image">
+            <img src="./images/about-book.png" alt="Knjiga" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_secondary">
+        <div class="people">
+          <div class="people__container">
+            <h2 class="people__title">
+              Zanima te zašto
+              <span class="people__title_accent">čitati?</span>
+            </h2>
+            <p class="people__text">
+              <span class="people__text_accent">Čitanje nas povezuje.</span>
+              Pogledaj zašto čitaju istaknute osobe iz javnog života i dopusti
+              da te njihova razmišljanja i iskustva potaknu na čitanje.
+            </p>
+            <button class="button">Saznaj više</button>
+          </div>
+          <div class="people__gallery">
+            <div class="people__wrapper">
+              <img
+                class="people__image"
+                src="./images/person1.png"
+                alt="Knjiga"
+              />
+              <p class="people__name">Jelena Miholjević</p>
+            </div>
+            <div class="people__wrapper">
+              <img
+                class="people__image"
+                src="./images/person2.png"
+                alt="Knjiga"
+              />
+              <p class="people__name">Davor Bruketa</p>
+            </div>
+            <div class="people__wrapper">
+              <img
+                class="people__image"
+                src="./images/person3.png"
+                alt="Knjiga"
+              />
+              <p class="people__name">Nika Turković</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="latest-news">
+          <h2 class="latest-news__title">Posljednje vijesti</h2>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news1.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  Kultura čitanja: što nam govore istra živanja o čitanju -
+                  stručni skup
+                </h3>
+                <p class="article__timestamp">7.rujna 2022.</p>
+              </article>
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news2.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  Izložba slikovnica “Knjiga u godini čitanja” u Osijeku
+                </h3>
+                <p class="article__timestamp">6. rujna 2022.</p>
+              </article>
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news3.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  Kultura čitanja: što nam govore istra živanja o čitanju -
+                  stručni skup
+                </h3>
+                <p class="article__timestamp">6. rujna 2022.</p>
+              </article>
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news4.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  10. Festival svjetske književnosti
+                </h3>
+                <p class="article__timestamp">5. rujna 2022.</p>
+              </article>
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news1.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  Kultura čitanja: što nam govore istra živanja o čitanju -
+                  stručni skup
+                </h3>
+                <p class="article__timestamp">7.rujna 2022.</p>
+              </article>
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news2.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  Izložba slikovnica “Knjiga u godini čitanja” u Osijeku
+                </h3>
+                <p class="article__timestamp">6. rujna 2022.</p>
+              </article>
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news3.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  Kultura čitanja: što nam govore istra živanja o čitanju -
+                  stručni skup
+                </h3>
+                <p class="article__timestamp">6. rujna 2022.</p>
+              </article>
+              <article class="article swiper-slide">
+                <img
+                  class="article__img"
+                  src="/images/news4.png"
+                  alt="Article image"
+                />
+                <h3 class="article__title">
+                  10. Festival svjetske književnosti
+                </h3>
+                <p class="article__timestamp">5. rujna 2022.</p>
+              </article>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <button class="button">Pogledaj sve</button>
+        </div>
+      </section>
+
+      <section class="section section_secondary">
+        <div class="feedback-section">
+          <div class="feedback-section__container">
+            <h2 class="feedback-section__title">
+              Zašto
+              <span class="feedback-section__title_accent">čitam?</span>
+            </h2>
+            <p class="feedback-section__text">
+              Želimo da tvoje razloge za čitanje čuju i drugi!
+            </p>
+            <form class="feedback-section__form" action="#" method="post">
+              <input
+                class="feedback-section__input"
+                type="text"
+                id="generalText"
+                placeholder="Up to 140 characters"
+                required
+              />
+              <span class="input-indicator" id="generalTextIndicator"
+                >0/140</span
+              >
+              <input
+                class="feedback-section__input"
+                type="text"
+                id="username"
+                placeholder="Username (required)"
+                required
+              />
+              <button class="button" id="submitButton" type="submit">
+                Saznaj više
+              </button>
+            </form>
+          </div>
+          <div class="feedback-section__image">
+            <img src="./images/news1.png" alt="Knjiga" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
