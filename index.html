@@ -266,23 +266,31 @@
               Želimo da tvoje razloge za čitanje čuju i drugi!
             </p>
             <form class="feedback-section__form" action="#" method="post">
-              <input
-                class="feedback-section__input"
-                type="text"
-                id="generalText"
-                placeholder="Up to 140 characters"
-                required
-              />
-              <span class="input-indicator" id="generalTextIndicator"
-                >0/140</span
-              >
-              <input
-                class="feedback-section__input"
-                type="text"
-                id="username"
-                placeholder="Username (required)"
-                required
-              />
+              <div class="feedback-section__field">
+                <input
+                  class="feedback-section__input"
+                  type="text"
+                  id="generalText"
+                  placeholder="Podijeli s nama svoje iskustvo čitanja"
+                  required
+                />
+                <p
+                  class="feedback-section__requirment"
+                  id="generalTextIndicator"
+                >
+                  0/140
+                </p>
+              </div>
+              <div class="feedback-section__field">
+                <input
+                  class="feedback-section__input"
+                  type="text"
+                  id="username"
+                  placeholder="Tvoje ime"
+                  required
+                />
+                <p class="feedback-section__requirment">(opcionalno)</p>
+              </div>
               <button class="button" id="submitButton" type="submit">
                 Saznaj više
               </button>
@@ -291,6 +299,385 @@
           <div class="feedback-section__image">
             <img src="./images/news1.png" alt="Knjiga" />
           </div>
+        </div>
+      </section>
+
+      <section class="section section_tertiary">
+        <div class="reviews">
+          <h2 class="reviews__title">
+            Provjeri zašto drugi posjetitelji
+            <span class="reviews__title_accent"> čitaju naše stranice </span>
+          </h2>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+              <article class="reviews__article swiper-slide">
+                <svg
+                  class="reviews__accent-vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="#DF5E5E"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+                <svg
+                  class="reviews__vector"
+                  width="303"
+                  height="343"
+                  viewBox="0 0 303 343"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.686759 62.38C3.72559 140.217 5.74523 182.622 12.3207 246.626C17.883 271.1 23.7669 281.227 42.8597 288.135C118.897 309.839 172.237 327.217 234.092 342.025C259.277 341.421 268.255 334.86 276.265 320.178C289.953 268.392 292.512 211.69 302.442 139.574C303.773 111.762 298.267 100.466 276.265 88.5968C195.658 54.7476 78.4886 8.49002 78.4886 8.49002C78.4886 8.49002 56.0918 -2.28648 42.8597 0.479346C27.3842 5.33233 20.6517 10.7058 12.3207 21.5984C2.70946 34.4509 0.192144 43.3878 0.686759 62.38Z"
+                  />
+                </svg>
+
+                <div class="reviews__container">
+                  <img
+                    class="reviews__img"
+                    src="/images/book-icon.png"
+                    alt="book icon"
+                  />
+                  <h3 class="reviews__user">Katarina</h3>
+                  <img
+                    class="reviews__icon"
+                    src="/images/quotation-icon.png"
+                    alt="quotation icon"
+                  />
+                  <p class="reviews__text">
+                    Čitam zato što me čitanje nadahnjuje, pobuđuje mi maštu.
+                    Čitanje me opušta nakon dugog dana i uvijek mi je kao dobar
+                    prijatelj pri ruci.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination reviews_pagination"></div>
+          </div>
+          <button class="button">Pogledaj sve</button>
         </div>
       </section>
     </main>
