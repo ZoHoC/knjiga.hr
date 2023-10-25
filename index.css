@@ -395,8 +395,8 @@ svg {
   font-size: 48px;
 }
 
-.swiper {
-  width: 100%;
+.latest-news__button {
+  margin-top: 80px;
 }
 
 .article {
@@ -420,20 +420,23 @@ svg {
   color: var(--color-primary);
 }
 
+/* -----swiper---- */
+
+.swiper {
+  width: 100%;
+  position: relative !important;
+}
+
+.swiper-wrapper {
+  padding-bottom: 72px;
+}
+
 .swiper-button-prev {
   color: var(--color-secondary) !important;
 }
 
 .swiper-button-next {
   color: var(--color-secondary) !important;
-}
-
-.swiper {
-  position: relative !important;
-}
-
-.swiper-wrapper {
-  padding-bottom: 72px;
 }
 
 .swiper-pagination {
@@ -549,7 +552,7 @@ svg {
 
 /* Reviews */
 .reviews {
-  padding: 50px;
+  padding: 100px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
